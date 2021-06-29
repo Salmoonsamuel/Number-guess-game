@@ -1,5 +1,6 @@
 //  let randomNumber = Math.floor(Math.random() * 100) + 1;
-let randomNumber = 86;
+let numbers = (86, 20);
+let randomNumber = numbers; 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
@@ -64,9 +65,12 @@ function resetGame() {
   guessField.value = '';
   guessField.focus();
   lastResult.style.backgroundColor = 'white';
-  randomNumber = 13;
+  randomNumber = 18;
   // randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+
+const d = new Date();
+document.getElementById("dem").innerHTML = d;
 
 var counter = 3;
 function upvote(){
@@ -74,6 +78,11 @@ function upvote(){
  document.getElementById("votes").innerHTML = counter;
 }
 
+var count = 0;
+function downvote(){
+ count = count + 1;
+ document.getElementById("vote").innerHTML = counter;
+}
  // Creating object of the Date class
  var date = new Date();
  // Get current hour
@@ -119,6 +128,9 @@ function update(t) {
  }
 }
 Time();
+
+
+
 // alert("Hello! Welcome to Salmoon's Game! Enjoy.....");
 
 // var count = 0;

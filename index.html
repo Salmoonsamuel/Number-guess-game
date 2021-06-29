@@ -13,52 +13,82 @@
    
 </head>
 <body>
-     <br>
-     <div class="first">
-     <h1><u>Check your Guess:</u></h1>
-     </div>
-     <div id = "digital-clock"> </div>
- 
-   <div class="container">
-    <div class="last">
-      <img src="IMG_1342.jpg">
-      <hr>
-      <ol>
-        <p id="day">Tips:</p>
-        <br>
-        <li>FIrst try: Number could be Even.</li>
-        <br>
-        <li>2nd try: Number could be Odd.</li>
-      </ol>
-      <hr>
-     </div>
-     <div class="timer">
-        <button id="clear">Time</button>
-      <div id="info"></div>
-      <div>
-        <p id="votes">3</p>
-        <button id="upvote" onclick="upvote()">Like</button>
-     </div>
-    </div>
-     <div class="child">
-       <h1>!!!!--Guess the Number---!!!!</h1>
+     <div class="container">
+          <div class="row">
+            <div id="top"class="col-sm-12 display-5 mt-4 mb-5"><p><i class="fa fa-anchor"></i>  Mind-Game</div>
+               <div class="row">
+               
+                  <div  id = "digital-clock" class="col-sm-12 text-center" >  </div>
+               </div>
+            <p id="dem" class="text-center mt-2" ></p>
+          </div>
 
-       <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-  
-       <div class="form">
-         <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-         <input type="submit" value="Submit guess" class="guessSubmit">
+          <div class="row text-center  mar">
+                <div class="col-sm-12">
+                  <h1>!!!!--Guess the Number---!!!!</h1>
+                  <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+                  <p>When Game-Over Scroll down to start or reset a game.</p>
+                  <div class="form">
+                    <label for="guessField"><i class="fas fa-comment"></i>  Enter a guess: </label><input type="text" id="guessField" class="guessField">
+                    <input type="submit" value="Submit guess" class="guessSubmit">
+                  </div>
+            
+                  <div class="resultParas">
+                    <p class="guesses"></p>
+                    <p class="lastResult"></p>
+                    <p class="lowOrHi"></p>
+                  </div>
+                </div>  
+          </div>
+
+          <div class="row text-center mt-4">
+            <div class="col-sm-12 text-center">
+              <!-- <hr> -->
+              <ul class="list-unstyled">
+                <h3 class="heading mb-5 ">////!!!\\\-----Spoiler----////!!!\\\</h3>
+                <li class="">1- Try pair of Even Numbers; Like 10 / 20 /30 or Like 42 / 56 / 72 / 86 /18 </li>
+                <br>
+                <li>2- Try pair of Odd numbers or single even or odd numbers. 89 / 13 / 67 / 45 </li>
+                <br>
+                <li>---Lets Start---</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="col-sm-12">
+              <h4 class="heading mb-5 "><i class="fa fa-comment"></i> Review:</h4>
+               <div class="row">
+                 <div class="col">
+                  <span class="offset-1">
+                    <p id="votes">3</p>
+                    <p>Let us know If you like the game: Hit the button below!</p>
+                    <button id="upvote" onclick="upvote()"><i class="fa fa-thumbs-up"></i></button>
+                  </span>
+                 </div>
+                 <div class="col">
+                  <span class="offset-1">
+                    <p id="vote">0</p>
+                    <p>Hit the button below, if you didnt like it!</p>
+                    <button id="upvote" onclick="downvote()"><i class="fa fa-thumbs-down"></i></button>
+                  </span>
+                 </div>
+               </div>
+          
+              <hr>
+            </div>
+          </div>
+      
+     </div>
+   <footer class="text-center mt-4">
+     <div class="container">
+       <div class="row">
+        <div class="col-sm-4"><b>Copyright: </b>salmoon samuel</div>
+         <div class="col-sm-4"><b>Email: </b>salmoonsamuel08@gmail.com</div>
+         <div class="col-sm-4"><b>Created and design by:</b>  Salmoon Samuel.</div>
        </div>
-  
-       <div class="resultParas">
-         <p class="guesses"></p>
-         <p class="lastResult"></p>
-         <p class="lowOrHi"></p>
-       </div>
-     </div>  
-   </div>
-   <footer>
-    Created and design by: Salmoon Samuel.
+     
+     </div>
+     <br>
+   
    </footer>
    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
