@@ -1,0 +1,83 @@
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(lightblue , lightyellow, steelblue);
+  /* width: 50%;
+  max-width: 800px;
+  min-width: 480px; */
+
+  text-align: center;
+
+}
+.container{
+    display: flex;
+    background:linear-gradient(linen, steelblue);
+    padding:20px 30px;
+    margin-top:60px;
+    /* margin-bottom: 13em; */
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+.last{
+    display:inline-flex;
+    background: linear-gradient(lightblue , lightyellow, steelblue);
+    padding:30px 0px 30px 20px;
+}
+.child{
+    border: solid;
+    border-radius: 20px;
+    display: inline;
+    background: linear-gradient(lightblue , lightyellow, steelblue);
+    padding:20px 30px;
+    /* margin: 50px; */
+    
+    padding:20px 20px 20px 3em;
+}
+.first{
+    display:inline-flex;
+    border-radius: 25px;
+    padding:10px 55px;
+    background: linear-gradient(lightblue , lightyellow, steelblue);
+    /* margin-left: 20em; */
+}
+img{
+    width:80px;
+    lenght: 25px;
+    border-radius: 20px;
+}
+.timer{
+ margin: 50px;
+  border-radius: ;
+}
+
+header{
+  margin:30px 0px 10px 0px
+  padding-bottom: 10px;
+}
+footer{
+    margin-top: 8em;
+}
+
+/* Importing Open Sans Condensed Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+body{
+    background-color: gray;
+}
+#digital-clock {
+ background-color: #66ffff;
+ width: 65%;
+ margin: auto;
+ padding: 20px;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 64px;
+ text-align: center;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
