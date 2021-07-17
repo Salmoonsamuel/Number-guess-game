@@ -72,7 +72,7 @@ function resetGame() {
 const d = new Date();
 document.getElementById("dem").innerHTML = d;
 
-var counter = 3;
+let counter = 3;
 function upvote(){
  counter = counter + 1;
  document.getElementById("votes").innerHTML = counter;
@@ -131,21 +131,7 @@ Time();
 
 
 
-// alert("Hello! Welcome to Salmoon's Game! Enjoy.....");
 
-// var count = 0;
-// var interval = setInterval(counter, 1000);
-// var btn = document.getElementById("clear");
-// btn.addEventListener("onclick", clearVal(interval));
-// function counter(){
-//  document.getElementById("info").innerHTML = count;
-//  count++;
-// function clearVal(interval){
-//   ;
-// }
-//   clearInterval();
-
-// }
 
 
 
