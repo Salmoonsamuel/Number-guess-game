@@ -72,7 +72,7 @@ function resetGame() {
 const d = new Date();
 document.getElementById("dem").innerHTML = d;
 
-let counter = 3;
+let counter = 0;
 function upvote(){
  counter = counter + 1;
  document.getElementById("votes").innerHTML = counter;
