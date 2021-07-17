@@ -90,9 +90,11 @@ btns.forEach(btn => {
         }else {
             count = 0;
         }
-        if(count > 0){
+     if(count > 0){
             btcont.style.backgroundColor = "pink";
             value.style.color = "green";
+            value.style.fontSize = "40px";
+            value.style.backgroundColor = "yellow";
         }
         if(count >= 5){
            btcont.style.backgroundColor = "gray";
@@ -102,9 +104,11 @@ btns.forEach(btn => {
            btcont.style.backgroundColor = "green";
             value.style.color = "blue";
         }
-        if(count < 0){
-           btcont.style.backgroundColor = "purple";
-            value.style.color = "red";
+       if(count < 0){
+           btcont.style.backgroundColor = "red";
+            value.style.color = "blue";
+            value.style.backgroundColor = "red";
+            value.style.fontSize = "20px";
         }
            if(count === 0){
            btcont.style.backgroundColor = "cyan";
@@ -113,6 +117,21 @@ btns.forEach(btn => {
         value.textContent = count;
     })
 });
+btdc.addEventListener('click', function(){
+  setTimeout(() => {
+    this.style.fontSize = "20px";
+    this.style.backgroundColor = "red";
+    lki.innerHTML = "Thanx for your feedback!";
+  }, 1000);
+});
+btin.addEventListener('click', function(){
+  setTimeout(() => {
+    this.style.backgroundColor= "yellow";
+    this.style.fontSize = "40px";
+    lki.innerHTML = "Thanx for your feedback and thanx for appreciating the hardwork of a beginner."
+  }, 2000);
+});
+
  // Creating object of the Date class
  var date = new Date();
  // Get current hour
