@@ -72,17 +72,47 @@ function resetGame() {
 const d = new Date();
 document.getElementById("dem").innerHTML = d;
 
-let counter = 0;
-function upvote(){
- counter = counter + 1;
- document.getElementById("votes").innerHTML = counter;
-}
+// review buttons code.
 
-var count = 0;
-function downvote(){
- count = count + 1;
- document.getElementById("vote").innerHTML = counter;
-}
+let count = 0;
+const btns = document.querySelectorAll('.btn');
+const value = document.querySelector('#value'); 
+const btcont = document.querySelector('.rev');
+
+btns.forEach(btn => {
+    btn.addEventListener('click', function(e){
+        const styles = e.currentTarget.classList;
+        console.log(styles);
+        if(styles.contains("decrease")){
+            count--;
+        } else if (styles.contains("increase")){
+            count++;
+        }else {
+            count = 0;
+        }
+        if(count > 0){
+            btcont.style.backgroundColor = "pink";
+            value.style.color = "green";
+        }
+        if(count >= 5){
+           btcont.style.backgroundColor = "gray";
+            value.style.color = "purple";
+        }
+          if(count >= 10){
+           btcont.style.backgroundColor = "green";
+            value.style.color = "blue";
+        }
+        if(count < 0){
+           btcont.style.backgroundColor = "purple";
+            value.style.color = "red";
+        }
+           if(count === 0){
+           btcont.style.backgroundColor = "cyan";
+            value.style.color = "#222";
+        }
+        value.textContent = count;
+    })
+});
  // Creating object of the Date class
  var date = new Date();
  // Get current hour
